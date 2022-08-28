@@ -3,7 +3,7 @@ import db from "db"
 import { z } from "zod"
 
 const UpdateProposal = z.object({
-  id: z.number(),
+  id: z.string(),
   name: z.string(),
 })
 

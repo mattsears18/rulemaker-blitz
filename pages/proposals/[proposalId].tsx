@@ -12,7 +12,7 @@ import deleteProposal from "app/proposals/mutations/deleteProposal"
 
 export const Proposal = () => {
   const router = useRouter()
-  const proposalId = useParam("proposalId", "number")
+  const proposalId = useParam("proposalId", "string")
   const [deleteProposalMutation] = useMutation(deleteProposal)
   const [proposal] = useQuery(getProposal, { id: proposalId })
 

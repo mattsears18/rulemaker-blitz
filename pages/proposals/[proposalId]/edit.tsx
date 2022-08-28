@@ -13,7 +13,7 @@ import { ProposalForm, FORM_ERROR } from "app/proposals/components/ProposalForm"
 
 export const EditProposal = () => {
   const router = useRouter()
-  const proposalId = useParam("proposalId", "number")
+  const proposalId = useParam("proposalId", "string")
   const [proposal, { setQueryData }] = useQuery(
     getProposal,
     { id: proposalId },
