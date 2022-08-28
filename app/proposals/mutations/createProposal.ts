@@ -8,6 +8,7 @@ const CreateProposal = z.object({
 
 export default resolver.pipe(resolver.zod(CreateProposal), resolver.authorize(), async (input) => {
   // TODO: in multi-tenant app, you must add validation to ensure correct tenant
+  console.log("input:", input)
   const proposal = await db.proposal.create({ data: input })
 
   return proposal
