@@ -55,7 +55,7 @@ const UserInfo = () => {
 
 const Home: BlitzPage = () => {
   return (
-    <Layout title="Home">
+    <Layout title="RuleMaker.io">
       <div className="container">
         <main>
           <div className="buttons" style={{ marginTop: "1rem", marginBottom: "1rem" }}>

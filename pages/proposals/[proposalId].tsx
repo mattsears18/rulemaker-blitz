@@ -19,11 +19,11 @@ export const Proposal = () => {
   return (
     <>
       <Head>
-        <title>Proposal {proposal.id}</title>
+        <title>Proposals | {proposal.name}</title>
       </Head>
 
       <div>
-        <h1>Proposal {proposal.id}</h1>
+        <h1>{proposal.name}</h1>
         <pre>{JSON.stringify(proposal, null, 2)}</pre>
 
         <Link href={Routes.EditProposalPage({ proposalId: proposal.id })}>
