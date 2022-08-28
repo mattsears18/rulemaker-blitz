@@ -2,6 +2,9 @@
   "name": "rulemaker-blitz",
   "version": "1.0.0",
   "scripts": {
+    "db": "docker-compose --project-directory ./db/dev --project-name rulemaker-blitz up -d",
+    "db:stop": "docker-compose --project-directory ./db/dev --project-name rulemaker-blitz down",
+    "dba": "docker-compose --project-directory ./db/dev --project-name rulemaker-blitz up",
     "dev": "blitz dev",
     "build": "blitz build",
     "start": "blitz start",
